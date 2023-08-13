@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Movies App</title>
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold mb-4">Movie Search</h1>
+    <div class="mb-4">
+      <input type="text" id="movieTitle" class="border rounded p-2 w-full" placeholder="Enter movie title">
+      <button id="searchButton" class="bg-blue-500 text-white p-2 rounded">Search</button>
+    </div>
+    <div class="flex">
+        <div id="movieInfo" class="bg-white p-4 rounded shadow">
+            <!-- Movie information will be displayed here -->
+          </div>
+          <div id="imageContainer" class="mt-4 ml-4">
+            <!-- Giphy images will be displayed here -->
+          </div>
+    </div>
+  </div>
+  <button id="historyButton" class="mt-4 ml-10 bg-blue-500 text-white p-2 rounded">Search History</button>
+  <div id="historyModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+    <div class="bg-white p-4 rounded shadow">
+      <h2 class="text-xl font-semibold mb-2">Search History</h2>
+      <ul id="historyList" class="list-disc pl-6">
+        <!-- Search history will be displayed here -->
+      </ul>
+      <button id="clearHistoryButton" class="mt-2 bg-red-500 text-white p-2 rounded">Clear History</button>
+      <button id="closeModalButton" class="mt-2 bg-blue-500 text-white p-2 rounded">Close</button>
+    </div>
+  </div>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
+
